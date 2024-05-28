@@ -4,7 +4,7 @@ import MyConponent from './MyComponent';
 function App() {
   
   return (
-   <MyConponent name ="React"></MyConponent>
+   <MyConponent name ="React">리액트</MyConponent>
   );
 }
 
