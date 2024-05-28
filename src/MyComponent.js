@@ -1,4 +1,7 @@
-const MyConponent = () => {
-    return <div>나의 새롭고 멋진 컴포넌트</div>
+const MyConponent = props => {
+    return <div>안녕하세요, 제 이름은 {props.name} 입니다</div>
+}
+MyConponent.defaultProps = {
+    name: "기본 이름"
 }
 export default MyConponent
