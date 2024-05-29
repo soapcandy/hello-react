@@ -1,12 +1,8 @@
 import "./App.css";
-import MyConponent from "./MyComponent";
+import EventPractice from "./EventPractice";
 
 function App() {
-  return (
-    <MyConponent name="React" favoriteNumber={1}>
-      리액트
-    </MyConponent>
-  );
+  return <EventPractice></EventPractice>;
 }
 
 export default App;
