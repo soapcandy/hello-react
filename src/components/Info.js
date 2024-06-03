@@ -1,19 +1,13 @@
 import { useEffect, useReducer, useState } from "react";
-
-function reducer(state, action) {
-  return {
-    ...state,
-    [action.name]: action.value, /// switch문 대신 배열 사용, 배열의 index값을 키로 사용
-  };
-}
+import useInputs from "../hooks/useInputs";
 
 const Info = () => {
-  const [state, dispatch] = useReducer(reducer, { name: "", nickname: "" });
+  const [state, onChange] = useInputs({
+    name: "",
+    nickname: "",
+  });
 
   const { name, nickname } = state;
-  const onChange = (e) => {
-    dispatch(e.target);
-  };
 
   return (
     <div>
