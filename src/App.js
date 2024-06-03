@@ -1,16 +1,7 @@
 import "./App.css";
-import ColorBox from "./components/ColorBox";
-import { ColorProvider } from "./contexts/color";
-import SelectColors from "./components/SelectColors";
+import Counter from "./components/Counter";
 function App() {
-  return (
-    <ColorProvider>
-      <div>
-        <SelectColors />
-        <ColorBox />
-      </div>
-    </ColorProvider>
-  );
+  return <Counter></Counter>;
 }
 
 export default App;
